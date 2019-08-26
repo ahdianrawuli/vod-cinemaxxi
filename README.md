@@ -31,3 +31,9 @@ http://IP-HOST:7070/hls/test,360p.mp4,480p.mp4,720p.mp4,.urlset/master.m3u8
 [d] images -> untuk build images alpine ke service stremming
 [d] log -> berisi log webserver
 [d] videos -> disini untuk upload video
+
+## Test VOD Streammer
+
+Buka http://demo.jwplayer.com/developer-tools/http-stream-tester
+
+Paste http://IP-HOST:7070/hls/test,360p.mp4,480p.mp4,720p.mp4,.urlset/master.m3u8 ke field "FILE URL" dan klik TEST STREAM
