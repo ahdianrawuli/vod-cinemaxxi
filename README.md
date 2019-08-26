@@ -37,3 +37,4 @@ http://IP-HOST:7070/hls/test,360p.mp4,480p.mp4,720p.mp4,.urlset/master.m3u8
 Buka http://demo.jwplayer.com/developer-tools/http-stream-tester
 
 Paste http://IP-HOST:7070/hls/test,360p.mp4,480p.mp4,720p.mp4,.urlset/master.m3u8 ke field "FILE URL" dan klik TEST STREAM
+
