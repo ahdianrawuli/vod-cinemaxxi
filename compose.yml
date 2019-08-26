@@ -1,0 +1,28 @@
+version: '3'
+services:
+
+  ### build nginx LB ###
+  vod:
+    build:
+      context: ./images
+      dockerfile: Dockerfile
+      args:
+        nginxversion: 1.14.2
+    networks:
+      - vod-net
+    container_name: vod
+    ports:
+      - "7070:80"
+    volumes:
+      - "./config/nginx.conf:/usr/local/nginx/conf/nginx.conf"
+      - "./videos:/opt/static/videos"
+      - "./entrypoint.sh:/root/entrypoint.sh"
+      - "./log:/var/log/nginx"
+    entrypoint: sh /root/entrypoint.sh
+
+networks:
+  vod-net:
+    ipam:
+      config:
+        - subnet: 172.21.0.0/24
+
