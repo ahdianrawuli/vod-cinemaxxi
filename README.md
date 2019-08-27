@@ -26,6 +26,9 @@ http://IP-HOST:7070/hls/test,360p.mp4,480p.mp4,720p.mp4,.urlset/master.m3u8
 
 ## Struktur services
 
+f = File
+d = Directory
+
 [f] compose.yml -> config untuk docker
 
 [f] entrypoint.sh -> untuk menjalankan nginx
